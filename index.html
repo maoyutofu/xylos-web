@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xylos — WebDAV Client</title>
+  <script>
+    (function() {
+      var lang = (navigator.language || 'en').toLowerCase();
+      var target = lang.startsWith('zh') ? '/zh/' : '/en/';
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="/en/">English</a> or <a href="/zh/">中文</a>…</p>
+</body>
+</html>
