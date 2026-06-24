@@ -88,7 +88,6 @@ t.auth_methods.forEach((m, i) => {
 });
 
 /* ── Footer ── */
-$('#footer-license').textContent = t.footer_license;
 $('#footer-copyright').textContent = t.footer_copyright;
 $('#footer-contact').textContent = t.footer_contact;
 

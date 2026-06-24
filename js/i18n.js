@@ -78,7 +78,6 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
-    footer_license: '开源协议：MIT License',
     footer_copyright: '© 2026 xylos. All rights reserved.',
     footer_contact: '社区反馈',
 
@@ -166,7 +165,6 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
-    footer_license: 'License: MIT',
     footer_copyright: '© 2026 xylos. All rights reserved.',
     footer_contact: 'Community',
 
