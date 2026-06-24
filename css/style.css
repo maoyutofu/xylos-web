@@ -494,11 +494,45 @@ a:hover { color: var(--color-accent); }
   border-top: 1px solid var(--color-border);
 }
 
+/* ── Screenshots Section ── */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 56px;
+}
+
+.screenshot-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.screenshot-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.screenshot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 14px 16px;
+  border-top: 1px solid var(--color-border);
+}
+
 /* ── Footer ── */
 .site-footer {
-  border-top: 1px solid var(--color-border);
-  padding: 32px 0;
-}
 
 .site-footer .container {
   display: flex;
@@ -579,6 +613,13 @@ a:hover { color: var(--color-accent); }
   }
 
   .auth-cards {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .screenshots-grid {
     grid-template-columns: 1fr;
     max-width: 500px;
     margin-left: auto;

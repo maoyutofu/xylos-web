@@ -87,6 +87,13 @@ t.auth_methods.forEach((m, i) => {
   authGrid.appendChild(card);
 });
 
+/* ── Screenshots ── */
+$('#screenshots-heading').textContent = t.screenshots_heading;
+$('#screenshots-subtitle').textContent = t.screenshots_subtitle;
+$('#scr-label-list').textContent = t.scr_list;
+$('#scr-label-grid').textContent = t.scr_grid;
+$('#scr-label-server').textContent = t.scr_server;
+
 /* ── Footer ── */
 $('#footer-copyright').textContent = t.footer_copyright;
 $('#footer-contact').textContent = t.footer_contact;
