@@ -2,6 +2,12 @@
 const I18N = {
   zh: {
     /* ── Nav ── */
+    nav_docs: '文档',
+    nav_docs_url: 'https://app.notion.com/p/38a18306b25e807ca9abf62e30b6f377?v=55018306b25e8208805388ad610498bf',
+    nav_download: '下载',
+    nav_download_url: 'https://github.com/maoyutofu/xylos-app/releases',
+    nav_contact: '社区',
+    nav_contact_url: 'https://github.com/maoyutofu/xylos-app/discussions',
     nav_github: 'View on GitHub',
 
     /* ── Hero ── */
@@ -87,6 +93,8 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
+    footer_docs: '文档',
+    footer_docs_url: 'https://app.notion.com/p/38a18306b25e807ca9abf62e30b6f377?v=55018306b25e8208805388ad610498bf',
     footer_copyright: '© 2026 Xylos. All rights reserved.',
     footer_contact: '社区反馈',
 
@@ -98,6 +106,12 @@ const I18N = {
 
   en: {
     /* ── Nav ── */
+    nav_docs: 'Docs',
+    nav_docs_url: 'https://app.notion.com/p/38a18306b25e805dafaed802d814e310?v=38a18306b25e801cb887000c14a49b40',
+    nav_download: 'Download',
+    nav_download_url: 'https://github.com/maoyutofu/xylos-app/releases',
+    nav_contact: 'Community',
+    nav_contact_url: 'https://github.com/maoyutofu/xylos-app/discussions',
     nav_github: 'View on GitHub',
 
     /* ── Hero ── */
@@ -183,6 +197,8 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
+    footer_docs: 'Docs',
+    footer_docs_url: 'https://app.notion.com/p/38a18306b25e805dafaed802d814e310?v=38a18306b25e801cb887000c14a49b40',
     footer_copyright: '© 2026 Xylos. All rights reserved.',
     footer_contact: 'Community',
 

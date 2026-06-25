@@ -43,6 +43,14 @@ $$('.lang-switch button').forEach(btn => {
   });
 });
 
+// Render nav links
+$('#nav-docs').textContent = t.nav_docs;
+$('#nav-docs').href = t.nav_docs_url;
+$('#nav-download').textContent = t.nav_download;
+$('#nav-download').href = t.nav_download_url;
+$('#nav-contact').textContent = t.nav_contact;
+$('#nav-contact').href = t.nav_contact_url;
+
 /* ── Hero ── */
 $('#hero-badge').textContent = LANG === 'zh' ? '开源 & 免费' : 'Open Source & Free';
 $('#hero-title').innerHTML = t.hero_title.replace(
@@ -101,7 +109,6 @@ $('#scr-m-label-server').textContent = t.scr_server;
 
 /* ── Footer ── */
 $('#footer-copyright').textContent = t.footer_copyright;
-$('#footer-contact').textContent = t.footer_contact;
 
 /* ── Scroll Reveal (Intersection Observer) ── */
 function initReveal() {

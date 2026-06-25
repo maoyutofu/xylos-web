@@ -186,6 +186,17 @@ a:hover { color: var(--color-accent); }
   gap: 12px;
 }
 
+.nav-link {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s var(--ease-out);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--color-text);
+}
+
 .lang-switch {
   display: flex;
   align-items: center;
@@ -679,6 +690,10 @@ a:hover { color: var(--color-accent); }
   }
   .nav-gh-link span {
     display: none;
+  }
+
+  .nav-link {
+    font-size: 0.78rem;
   }
 
   /* ── Typography ── */
