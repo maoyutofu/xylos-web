@@ -90,9 +90,14 @@ t.auth_methods.forEach((m, i) => {
 /* ── Screenshots ── */
 $('#screenshots-heading').textContent = t.screenshots_heading;
 $('#screenshots-subtitle').textContent = t.screenshots_subtitle;
+$('#scr-desk-heading').textContent = t.scr_desk_heading;
+$('#scr-mobi-heading').textContent = t.scr_mobi_heading;
 $('#scr-label-list').textContent = t.scr_list;
 $('#scr-label-grid').textContent = t.scr_grid;
 $('#scr-label-server').textContent = t.scr_server;
+$('#scr-m-label-list').textContent = t.scr_list;
+$('#scr-m-label-grid').textContent = t.scr_grid;
+$('#scr-m-label-server').textContent = t.scr_server;
 
 /* ── Footer ── */
 $('#footer-copyright').textContent = t.footer_copyright;

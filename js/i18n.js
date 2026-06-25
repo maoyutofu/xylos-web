@@ -71,6 +71,8 @@ const I18N = {
     /* ── Screenshots ── */
     screenshots_heading: '界面预览',
     screenshots_subtitle: '简洁直观的界面，管理文件就像操作本地文件夹。',
+    scr_desk_heading: '桌面端',
+    scr_mobi_heading: '移动端',
     scr_list: '列表视图',
     scr_grid: '网格视图',
     scr_server: '服务器管理',
@@ -165,6 +167,8 @@ const I18N = {
     /* ── Screenshots ── */
     screenshots_heading: 'Screenshots',
     screenshots_subtitle: 'Clean and intuitive interface — managing files feels just like your local folders.',
+    scr_desk_heading: 'Desktop',
+    scr_mobi_heading: 'Mobile',
     scr_list: 'List View',
     scr_grid: 'Grid View',
     scr_server: 'Server Management',
