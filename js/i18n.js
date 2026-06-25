@@ -1,11 +1,11 @@
-/* xylos i18n — single source of truth for all copy */
+/* Xylos i18n — single source of truth for all copy */
 const I18N = {
   zh: {
     /* ── Nav ── */
     nav_github: 'View on GitHub',
 
     /* ── Hero ── */
-    hero_title: 'xylos — 专为 WebDAV 而生的极简网盘客户端',
+    hero_title: 'Xylos — 专为 WebDAV 而生的极简网盘客户端',
     hero_subtitle: '开源、轻量、即装即用。支持 Basic / Digest / Bearer Token 认证，让你的 WebDAV 服务器秒变本地磁盘。',
     hero_cta_download: '免费下载',
     hero_cta_github: 'View on GitHub',
@@ -85,13 +85,13 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
-    footer_copyright: '© 2026 xylos. All rights reserved.',
+    footer_copyright: '© 2026 Xylos. All rights reserved.',
     footer_contact: '社区反馈',
 
     /* ── Meta ── */
-    meta_title: 'xylos — 专为 WebDAV 而生的极简开源网盘客户端',
-    meta_desc: 'xylos 是一个开源、轻量的 WebDAV 协议网盘客户端。支持 Basic / Digest / Bearer Token 认证，支持 macOS / Windows / Linux，让你管理远程文件像操作本地文件夹一样简单。',
-    meta_og_title: 'xylos — 极简 WebDAV 网盘客户端'
+    meta_title: 'Xylos — 专为 WebDAV 而生的极简开源网盘客户端',
+    meta_desc: 'Xylos 是一个开源、轻量的 WebDAV 协议网盘客户端。支持 Basic / Digest / Bearer Token 认证，支持 macOS / Windows / Linux，让你管理远程文件像操作本地文件夹一样简单。',
+    meta_og_title: 'Xylos — 极简 WebDAV 网盘客户端'
   },
 
   en: {
@@ -99,7 +99,7 @@ const I18N = {
     nav_github: 'View on GitHub',
 
     /* ── Hero ── */
-    hero_title: 'xylos — A Minimal WebDAV Client, Just Works',
+    hero_title: 'Xylos — A Minimal WebDAV Client, Just Works',
     hero_subtitle: 'Open source, lightweight, ready to go. Supports Basic, Digest, and Bearer Token auth — mount your WebDAV server as a local drive in seconds.',
     hero_cta_download: 'Download Free',
     hero_cta_github: 'View on GitHub',
@@ -179,12 +179,12 @@ const I18N = {
     started_star_on_github: '⭐ Star on GitHub',
 
     /* ── Footer ── */
-    footer_copyright: '© 2026 xylos. All rights reserved.',
+    footer_copyright: '© 2026 Xylos. All rights reserved.',
     footer_contact: 'Community',
 
     /* ── Meta ── */
-    meta_title: 'xylos — A Minimal Open-Source WebDAV Client',
-    meta_desc: 'xylos is an open-source, lightweight WebDAV client. Supports Basic, Digest, and Bearer Token auth. Available on macOS, Windows, and Linux. Manage remote files as naturally as your local folders.',
-    meta_og_title: 'xylos — Minimal WebDAV Client'
+    meta_title: 'Xylos — A Minimal Open-Source WebDAV Client',
+    meta_desc: 'Xylos is an open-source, lightweight WebDAV client. Supports Basic, Digest, and Bearer Token auth. Available on macOS, Windows, and Linux. Manage remote files as naturally as your local folders.',
+    meta_og_title: 'Xylos — Minimal WebDAV Client'
   }
 };

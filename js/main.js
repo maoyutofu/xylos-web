@@ -46,8 +46,8 @@ $$('.lang-switch button').forEach(btn => {
 /* ── Hero ── */
 $('#hero-badge').textContent = LANG === 'zh' ? '开源 & 免费' : 'Open Source & Free';
 $('#hero-title').innerHTML = t.hero_title.replace(
-  'xylos',
-  '<span>xylos</span>'
+  'Xylos',
+  '<span>Xylos</span>'
 );
 $('#hero-subtitle').textContent = t.hero_subtitle;
 $('#hero-cta-download').textContent = t.hero_cta_download;
