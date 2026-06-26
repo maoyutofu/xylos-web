@@ -43,13 +43,73 @@ $$('.lang-switch button').forEach(btn => {
   });
 });
 
-// Render nav links
-$('#nav-docs').textContent = t.nav_docs;
-$('#nav-docs').href = t.nav_docs_url;
-$('#nav-download').textContent = t.nav_download;
-$('#nav-download').href = t.nav_download_url;
-$('#nav-contact').textContent = t.nav_contact;
-$('#nav-contact').href = t.nav_contact_url;
+// Mobile menu — uses standalone .mobile-menu overlay
+function initMenuToggle() {
+  var menuToggle = document.querySelector('.menu-toggle');
+  var mobileMenu = document.querySelector('.mobile-menu');
+  var backdrop = document.querySelector('.menu-backdrop');
+  var navActions = document.querySelector('.nav-actions');
+  if (!menuToggle || !mobileMenu) return;
+
+  var isOpen = false;
+
+  function checkMobile() {
+    if (window.innerWidth <= 767) {
+      menuToggle.style.display = 'block';
+      // Hide desktop nav on mobile
+      navActions.style.display = 'none';
+    } else {
+      menuToggle.style.display = 'none';
+      navActions.style.display = '';
+      closeMenu();
+    }
+  }
+
+  function openMenu() {
+    isOpen = true;
+    mobileMenu.classList.add('open');
+    menuToggle.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuToggle.setAttribute('aria-label', LANG === 'zh' ? '关闭菜单' : 'Close menu');
+  }
+
+  function closeMenu() {
+    isOpen = false;
+    mobileMenu.classList.remove('open');
+    menuToggle.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', LANG === 'zh' ? '打开菜单' : 'Open menu');
+  }
+
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+
+  menuToggle.addEventListener('click', function() {
+    if (window.innerWidth > 767) return;
+    if (isOpen) { closeMenu(); } else { openMenu(); }
+  });
+
+  if (backdrop) {
+    backdrop.addEventListener('click', function() { closeMenu(); });
+  }
+
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() { closeMenu(); });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+}
+
+initMenuToggle();
 
 /* ── Hero ── */
 $('#hero-badge').textContent = LANG === 'zh' ? '开源 & 免费' : 'Open Source & Free';

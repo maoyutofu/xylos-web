@@ -197,6 +197,125 @@ a:hover { color: var(--color-accent); }
   color: var(--color-text);
 }
 
+/* ── Menu Toggle & Backdrop (mobile) ── */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: var(--color-text);
+  z-index: 210;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-text);
+  transition: all 0.3s var(--ease-out);
+  border-radius: 1px;
+}
+
+.menu-icon {
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menu-icon::before { top: -6px; }
+.menu-icon::after  { top: 6px; }
+
+.menu-toggle.open .menu-icon {
+  background: transparent;
+}
+
+.menu-toggle.open .menu-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-toggle.open .menu-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Standalone mobile menu overlay (outside header, bulletproof) */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--color-bg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 32px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 6px 0;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+.mobile-menu a:hover {
+  color: var(--color-accent);
+}
+
+.mobile-menu .mobile-gh {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.mobile-menu .mobile-gh:hover {
+  color: var(--color-accent);
+}
+
+.mobile-menu .lang-switch {
+  margin-top: 8px;
+}
+
+.mobile-menu .lang-switch button {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+}
+
+.menu-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 150;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: opacity 0.3s var(--ease-out);
+}
+
+.menu-backdrop.open {
+  display: block;
+}
+
 .lang-switch {
   display: flex;
   align-items: center;
@@ -676,24 +795,12 @@ a:hover { color: var(--color-accent); }
     height: 52px;
   }
 
+  .site-header .container {
+    position: relative;
+  }
+
   .site-logo {
     font-size: 1.1rem;
-  }
-
-  .lang-switch button {
-    padding: 3px 8px;
-    font-size: 0.72rem;
-  }
-
-  .nav-gh-link {
-    padding: 5px 8px;
-  }
-  .nav-gh-link span {
-    display: none;
-  }
-
-  .nav-link {
-    font-size: 0.78rem;
   }
 
   /* ── Typography ── */
