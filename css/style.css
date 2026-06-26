@@ -292,6 +292,24 @@ a:hover { color: var(--color-accent); }
   color: var(--color-accent);
 }
 
+.menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 8px;
+  transition: color 0.2s;
+}
+
+.menu-close:hover {
+  color: var(--color-text);
+}
+
 .mobile-menu .lang-switch {
   margin-top: 8px;
 }

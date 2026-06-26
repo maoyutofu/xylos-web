@@ -97,6 +97,17 @@ function initMenuToggle() {
     backdrop.addEventListener('click', function() { closeMenu(); });
   }
 
+  // Close button
+  var closeBtn = mobileMenu.querySelector('.menu-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() { closeMenu(); });
+  }
+
+  // Click on menu background (not links) to close
+  mobileMenu.addEventListener('click', function(e) {
+    if (e.target === mobileMenu) closeMenu();
+  });
+
   mobileMenu.querySelectorAll('a').forEach(function(link) {
     link.addEventListener('click', function() { closeMenu(); });
   });
