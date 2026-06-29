@@ -11,7 +11,7 @@ const I18N = {
     nav_github: 'View on GitHub',
 
     /* ── Hero ── */
-    hero_title: 'Xylos — 专为 WebDAV 而生的极简网盘客户端',
+    hero_title: 'Xylos — 专为 WebDAV 而生的极简客户端',
     hero_subtitle: '开源、轻量、即装即用。支持 Basic / Digest / Bearer Token 认证，让你的 WebDAV 服务器秒变本地磁盘。',
     hero_cta_download: '免费下载',
     hero_cta_github: 'View on GitHub',
@@ -99,9 +99,9 @@ const I18N = {
     footer_contact: '社区反馈',
 
     /* ── Meta ── */
-    meta_title: 'Xylos — 专为 WebDAV 而生的极简开源网盘客户端',
-    meta_desc: 'Xylos 是一个开源、轻量的 WebDAV 协议网盘客户端。支持 Basic / Digest / Bearer Token 认证，支持 macOS / Windows / Linux，让你管理远程文件像操作本地文件夹一样简单。',
-    meta_og_title: 'Xylos — 极简 WebDAV 网盘客户端'
+    meta_title: 'Xylos — 专为 WebDAV 而生的极简开源客户端',
+    meta_desc: 'Xylos 是一个开源、轻量的 WebDAV 协议客户端。支持 Basic / Digest / Bearer Token 认证，支持 macOS / Windows / Linux，让你管理远程文件像操作本地文件夹一样简单。',
+    meta_og_title: 'Xylos — 极简 WebDAV 客户端'
   },
 
   en: {
